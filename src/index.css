@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Muli:300');
+
+body {
+  font-family: 'Muli', sans-serif, 'simple-line-icons';
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+:focus {
+  outline-style: none;
+}

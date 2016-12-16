@@ -1,0 +1,49 @@
+/* loading progress */
+@keyframes placeHolderShimmer{
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
+}
+
+@-moz-keyframes placeHolderShimmer {
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
+}
+
+@mixin loading-progress($fontSize: 0.8em) {
+  color: rgba(255, 0, 0, 0);
+  font-size: $fontSize !important;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+
+}
+
+@mixin mobile-silde($left: 0%, $time: 0.3s) {
+  margin-left: $left;
+  -webkit-transition: margin $time;
+  transition: margin $time;
+}

@@ -1,0 +1,2 @@
+export const OPEN_SWEET_ALERT = "OPEN_SWEET_ALERT";
+export const CLOSE_SWEET_ALERT = "CLOSE_SWEET_ALERT";

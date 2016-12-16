@@ -1,0 +1,605 @@
+/* Bubble Popup */
+.bubble-popup {
+  -webkit-animation: bubble-popup $anim linear;
+  -o-animation: bubble-popup $anim linear;
+  animation: bubble-popup $anim linear;
+}
+
+@keyframes bubble-popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1,0.1);
+    -ms-transform: scale(0.1,0.1);
+    transform: scale(0.1,0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+@-webkit-keyframes bubble-popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1,0.1);
+    -ms-transform: scale(0.1,0.1);
+    transform: scale(0.1,0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+@-moz-keyframes bubble-popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1,0.1);
+    -ms-transform: scale(0.1,0.1);
+    transform: scale(0.1,0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+@-o-keyframes bubble-popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1,0.1);
+    -ms-transform: scale(0.1,0.1);
+    transform: scale(0.1,0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
+/* Infinite Spin */
+.infinite-spin {
+    -webkit-animation: spin $anim infinite linear;
+    -o-animation: spin $anim infinite linear;
+    animation: spin $anim infinite linear;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Infinite Spin */
+.infinite-reverse-spin {
+    -webkit-animation: reverse-spin $anim infinite linear;
+    -o-animation: reverse-spin $anim infinite linear;
+    animation: reverse-spin $anim infinite linear;
+}
+
+@-moz-keyframes reverse-spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes reverse-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+@keyframes reverse-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+/* Smooth-entry-fade */
+.smooth-entry-fade {
+    -webkit-animation: smooth-entry-fade $anim-300ms ease-out 0s forwards;
+    -moz-animation: smooth-entry-fade $anim-300ms ease-out 0s forwards;
+    animation: smooth-entry-fade $anim-300ms ease-out 0s forwards;
+}
+
+@-webkit-keyframes smooth-entry-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes smooth-entry-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes smooth-entry-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin active-zoom($anim) {
+  -webkit-animation: active-zoom $anim ease-out 0s forwards;
+  -moz-animation: active-zoom $anim ease-out 0s forwards;
+  animation: active-zoom $anim ease-out 0s forwards;
+}
+
+@keyframes active-zoom {
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+/* Smooth-entry-fade-zoom */
+.smooth-entry-fade-zoom {
+    -webkit-animation: smooth-entry-fade-zoom $anim-300ms ease-out 0s forwards;
+    -moz-animation: smooth-entry-fade-zoom $anim-300ms ease-out 0s forwards;
+    animation: smooth-entry-fade-zoom $anim-300ms ease-out 0s forwards;
+}
+
+@-webkit-keyframes smooth-entry-fade-zoom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5, 0.5);
+    }
+    80% {
+        -webkit-transform: scale(1.02, 1.02);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1);
+    }
+}
+@-moz-keyframes smooth-entry-fade-zoom {
+    0% {
+        opacity: 0;
+        -moz-transform: scale(0.8, 0.8);
+    }
+    80% {
+        -moz-transform: scale(1.02, 1.02);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: scale(1, 1);
+    }
+}
+@keyframes smooth-entry-fade-zoom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8, 0.8);
+        -moz-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        -o-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+    }
+    80% {
+        -webkit-transform: scale(1.02, 1.02);
+        -moz-transform: scale(1.02, 1.02);
+        -ms-transform: scale(1.02, 1.02);
+        -o-transform: scale(1.02, 1.02);
+        transform: scale(1.02, 1.02);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+/* Full-entry-animate-left-right */
+.full-entry-title-animate-left {
+    -webkit-animation: full-entry-title-left $anim ease-out 0s forwards;
+    -moz-animation: full-entry-title-left $anim ease-out 0s forwards;
+    animation: full-entry-title-left $anim ease-out 0s forwards;
+}
+
+@-webkit-keyframes full-entry-title-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes full-entry-title-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(0);
+    }
+}
+@keyframes full-entry-title-left {
+    0% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/* Smooth-entry-animate-up-down */
+.smooth-entry-title-animate-up {
+    -webkit-animation: smooth-entry-title-up $anim-fast ease-out 0s forwards;
+    -moz-animation: smooth-entry-title-up $anim-fast ease-out 0s forwards;
+    animation: smooth-entry-title-up $anim-fast ease-out 0s forwards;
+}
+.smooth-entry-title-animate-down {
+    -webkit-animation: smooth-entry-title-down $anim-fast ease-out 0s forwards;
+    -moz-animation: smooth-entry-title-down $anim-fast ease-out 0s forwards;
+    animation: smooth-entry-title-down $anim-fast ease-out 0s forwards;
+}
+
+@-webkit-keyframes smooth-entry-title-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-0.6em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes smooth-entry-title-down {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-0.6em);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@keyframes smooth-entry-title-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-0.6em);
+        -moz-transform: translateY(-0.6em);
+        -ms-transform: translateY(-0.6em);
+        -o-transform: translateY(-0.6em);
+        transform: translateY(-0.6em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes smooth-entry-title-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0.6em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes smooth-entry-title-up {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(0.6em);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@keyframes smooth-entry-title-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0.6em);
+        -moz-transform: translateY(0.6em);
+        -ms-transform: translateY(0.6em);
+        -o-transform: translateY(0.6em);
+        transform: translateY(0.6em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Smooth-pulse-fade-zoom */
+.smooth-pulse-fade-zoom {
+  -webkit-animation: smooth-pulse-fade-zoom $anim ease-out 0s forwards;
+  -moz-animation: smooth-pulse-fade-zoom $anim ease-out 0s forwards;
+  animation: smooth-pulse-fade-zoom $anim ease-out 0s forwards;
+}
+@-webkit-keyframes smooth-pulse-fade-zoom {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2, 2);
+  }
+}
+@-moz-keyframes smooth-pulse-fade-zoom {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.5, 0.5);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2, 2);
+  }
+}
+@keyframes smooth-pulse-fade-zoom {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+    transform: scale(2, 2);
+  }
+}
+
+/* Smooth-leave-animate-up-down */
+.smooth-leave-title-animate-up {
+    -webkit-animation: smooth-leave-title-up $anim-fast ease-out 0s forwards;
+    -moz-animation: smooth-leave-title-up $anim-fast ease-out 0s forwards;
+    animation: smooth-leave-title-up $anim-fast ease-out 0s forwards;
+}
+.smooth-leave-title-animate-down {
+    -webkit-animation: smooth-leave-title-down $anim-fast ease-out 0s forwards;
+    -moz-animation: smooth-leave-title-down $anim-fast ease-out 0s forwards;
+    animation: smooth-leave-title-down $anim-fast ease-out 0s forwards;
+}
+
+@-webkit-keyframes smooth-leave-title-down {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(0.6em);
+    }
+}
+@-moz-keyframes smooth-leave-title-down {
+    0% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translateY(0.6em);
+    }
+}
+@keyframes smooth-leave-title-down {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(0.6em);
+        -moz-transform: translateY(0.6em);
+        -ms-transform: translateY(0.6em);
+        -o-transform: translateY(0.6em);
+        transform: translateY(0.6em);
+    }
+}
+
+@-webkit-keyframes smooth-leave-title-up {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-0.6em);
+    }
+}
+@-moz-keyframes smooth-leave-title-up {
+    0% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translateY(-0.6em);
+    }
+}
+@keyframes smooth-leave-title-up {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-0.6em);
+        -moz-transform: translateY(-0.6em);
+        -ms-transform: translateY(-0.6em);
+        -o-transform: translateY(-0.6em);
+        transform: translateY(-0.6em);
+    }
+}
+
+/* Place Holder CSS */
+::-webkit-input-placeholder {
+  color: $title-black;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+  color: $title-black;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+::-moz-placeholder {
+  color: $title-black;
+  opacity: 0.5;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-ms-input-placeholder {
+  color: $title-black;
+  opacity: 0.5;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+  opacity: 0.75;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover::-moz-placeholder {
+  opacity: 0.75;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:hover:-ms-input-placeholder {
+  opacity: 0.75;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
