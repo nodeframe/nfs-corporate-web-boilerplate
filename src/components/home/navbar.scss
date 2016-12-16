@@ -1,6 +1,10 @@
 header {
   padding: 0 4%;
   height: 80px;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 100;
 }
 
 .navbarLogo {
